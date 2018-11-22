@@ -55,9 +55,9 @@ ERROR CODES
 
 I assigned various exit commands, their return are:
 
-0 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
+0 = The file you specified does not exist.
 
-1 = The file you specified does not exist.
+1 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
 
 *********************************************************************************************************************************
 Thank you for your attention, I hope you will appreciate my work.
