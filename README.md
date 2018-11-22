@@ -42,15 +42,21 @@ In wich:
 "num of bin" is the amount of iterations you want.
 
 *********************************************************************************************************************************
+HOW TO CALCULATE THE FINAL POINT OF THE GRAPH
+
 The final x point is then given by:
 
 startingpoint + (widthofbin * numbofbin)
 
+I'm sorry if that is not the most efficient and easy way, I will update in future: any suggestion is appreciated.
+
 *********************************************************************************************************************************
 ERROR CODES
+
 I assigned various exit commands, their return are:
 
 0 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
+
 1 = The file you specified does not exist.
 
 *********************************************************************************************************************************
