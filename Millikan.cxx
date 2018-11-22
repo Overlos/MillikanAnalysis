@@ -32,7 +32,7 @@ if(!in){
 	cout<< "Achtung! File not found, exiting" << endl;
 	exit(1);
 
-	}else{
+}else{
 
 	while(!in.eof()){
 		double value = 0;
@@ -53,20 +53,20 @@ vector<double> k[nbin];
 double param, fractpart, intpart;
 
 for(int a=0; a<nbin ; a++){
-		for(int i=0; i<Qi.size()-1; i++){
+	for(int i=0; i<Qi.size()-1; i++){
 		param=((Qi[i]/q[a])+0.5);
 		fractpart=modf(param, &intpart);
 		k[a].push_back(intpart);
+		}
 	}
-}
 
 vector<double> S_q[nbin];
 
 for(int a=0; a<nbin; a++){
 	for(int i=0; i<Qi.size()-1; i++){
 		S_q[a].push_back(pow(((Qi[i]/k[a].at(i))-q[a]),2));
+		}
 	}
-}
 
 vector<double> S_qfinal;
 
@@ -99,7 +99,7 @@ double ymin = y[locmin];
 
 double distance = abs(xmin-echarge);
 double percentage = (distance*100)/echarge;
-double stdev = sqrt(ymin/(Qi.size()*(Qi.size()-1)));
+double stdev = sqrt(ymin/((Qi.size()-1)*(Qi.size()-2)));
 double sigma = distance/stdev;
 
 cout <<"The best value for the electron's charge is  " << xmin << endl;
@@ -110,6 +110,7 @@ cout <<"The stdev is " << stdev << endl;
 cout <<"And the deviation in terms of stdev is " << sigma << endl;
 
 TCanvas *myGraph = new TCanvas("MyGraph","Grafico");
+
 g->SetTitle("Trend of  S(q)");
 g->GetXaxis()->SetTitle("q [C]");
 g->GetYaxis()->SetTitle("S(q) [C^2]");
