@@ -27,7 +27,7 @@ USE OF "MILLIKAN"
 
 In Linux and Linux-like terminals, you execute the program by typing
 
-./Millikan *name of file* *starting point* *width of bin* *number of bin*
+./Millikan *"name of file"* *"starting point"* *"width of bin"* *"num of bin"*
 
 In wich:
 
@@ -37,7 +37,7 @@ In wich:
 
 "width of bin" is the amount by which the x is incremented for every iteration;
 
-"number of bin" is the amount of iterations you want.
+"num of bin" is the amount of iterations you want.
 
 The final x point is then given by 
 
