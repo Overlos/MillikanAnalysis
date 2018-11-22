@@ -15,14 +15,14 @@ MAKEFILE
 
 The commands without the quotation mark are:
 
-"all" wich compiles the program, outputting an executable called "millikan"
+"all" wich compiles the program, outputting an executable called "Millikan"
 "clean" wich removes all the .o files and wipes the core
 
 USING OF "MILLIKAN"
 
 In Linux and Linux-like terminals, you execute the program by typing
 
-./millikan *nameoffile* *startingpoint* *widthofbin* *numberofbin*
+./Millikan *nameoffile* *startingpoint* *widthofbin* *numberofbin*
 
 In wich:
 
