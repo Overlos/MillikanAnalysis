@@ -31,7 +31,7 @@ In Linux and Linux-like terminals, you execute the program by typing
 
 ./Millikan *"name of file"* *"starting point"* *"width of bin"* *"num of bin"*
 
-In wich:
+In which:
 
 "name of file" is the name, with eventual extension, of the file in wich you have ONLY the values of the charges;
 
@@ -53,11 +53,15 @@ I'm sorry if that is not the most efficient and easy way, I will update in futur
 *********************************************************************************************************************************
 EXIT CODES
 
+To see an exit code, type *echo $?* in the terminal.
+
 I assigned various exit commands, their return are:
 
-0 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
+1 = Generic error, probably  wrong input type or too much iterations asked.
 
-1 = The file you specified does not exist.
+2 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
+
+3 = The file you specified does not exist.
 
 130 = Program closed with "Ctrl+C".
 
