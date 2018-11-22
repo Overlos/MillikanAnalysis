@@ -19,9 +19,11 @@ MAKEFILE
 
 The commands without the quotation mark are:
 
-"all" wich compiles the program, outputting an executable called "Millikan".
+"all" which compiles the program, outputting an executable called "Millikan".
 
-"clean" wich removes all the .o files and wipes out the core.
+"clean" which removes all the .o files and wipes out the core.
+
+*********************************************************************************************************************************
 
 USE OF "MILLIKAN"
 
@@ -39,11 +41,20 @@ In wich:
 
 "num of bin" is the amount of iterations you want.
 
-The final x point is then given by 
+*********************************************************************************************************************************
+The final x point is then given by:
 
-startingpoint + (widthofbin * numberofbin)
+startingpoint + (widthofbin * numbofbin)
 
-Thank you for your attention.
+*********************************************************************************************************************************
+ERROR CODES
+I assigned various exit commands, their return are:
+
+0 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
+1 = The file you specified does not exist.
+
+*********************************************************************************************************************************
+Thank you for your attention, I hope you will appreciate my work.
 
 Andrea Trezzi 
 
