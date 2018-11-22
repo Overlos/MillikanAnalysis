@@ -3,8 +3,8 @@
 #include "funzioni.h"
 #include "TAxis.h"
 #include "TApplication.h"
-#include "TCanvas.h"
 #include "TF1.h"
+#include "TCanvas.h"
 #include "TGraph.h"
 #include <cmath>
 #include <string>
@@ -13,6 +13,8 @@
 using namespace std;
 
 int main(int argc, char** argv){
+
+Control(argc);
 
 double echarge=1.60217e-19;
 

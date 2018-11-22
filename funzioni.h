@@ -1,1 +1,2 @@
+void Control(int );
 
