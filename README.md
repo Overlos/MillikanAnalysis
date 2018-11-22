@@ -51,13 +51,15 @@ startingpoint + (widthofbin * numbofbin)
 I'm sorry if that is not the most efficient and easy way, I will update in future: any suggestion is appreciated.
 
 *********************************************************************************************************************************
-ERROR CODES
+EXIT CODES
 
 I assigned various exit commands, their return are:
 
 0 = The amount of files required was not met, you inserted more or less than 5 elements, which is the number currently required.
 
 1 = The file you specified does not exist.
+
+130 = Program closed with "Ctrl+C".
 
 *********************************************************************************************************************************
 Thank you for your attention, I hope you will appreciate my work.
