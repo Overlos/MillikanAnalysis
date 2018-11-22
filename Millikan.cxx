@@ -30,7 +30,7 @@ vector<double> Qi;
 if(!in){
 
 	cout<< "Achtung! File not found, exiting" << endl;
-	exit(1);
+	exit(3);
 
 }else{
 
@@ -102,7 +102,7 @@ double percentage = (distance*100)/echarge;
 double stdev = sqrt(ymin/((Qi.size()-1)*(Qi.size()-2)));
 double sigma = distance/stdev;
 
-cout <<"The best value for the electron's charge is  " << xmin << endl;
+cout <<"The best value for the electron's charge is " << xmin << endl;
 cout <<"In that point S_q is equal to " << ymin << endl;
 cout <<"The deviation from the true value is " << distance << endl;
 cout <<"And the percentual deviation is  "<< percentage << "%" << endl;
