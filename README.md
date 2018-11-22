@@ -13,7 +13,11 @@ RooT release 6.14/04
 
 *********************************************************************************************************************************
 
-In this repository you wìll find a makefile, two *.cxx* files and one *.h* file.
+In this repository you wìll find a makefile, two *.cxx* files, one *.h* file and one *.dat* test file.
+
+The test file contains a series of fake charge values which return a parabola having a minimun in 1.60438e-19 at maximun precision.
+
+You can test the software with this data set, varying the range and the precision.
 
 MAKEFILE
 
