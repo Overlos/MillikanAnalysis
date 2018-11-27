@@ -15,11 +15,16 @@ RooT release 6.14/04
 
 *********************************************************************************************************************************
 
-In this repository you wìll find a makefile, three *.cxx* files, two *.h* file and one *.dat* test file.
+In this repository you wìll find a makefile, three *.cxx* files, two *.h* file and two *.dat* test file.
 
-The test file contains a series of fake charge values which return a parabola having a minimun in 1.60438e-19 at maximun precision.
+The test file "vitto.dat" contains a series of fake charge values which return a parabola having a minimun in 1.60438e-19 at maximun precision.
 
 You can test the software with this data set, varying the range and the precision.
+
+3.dat are my personal laboratory datas, you can see the parabola minimum in a small neighbourhood of 1.61708e-19.
+
+I suggest not to exceed with the number of iterations, I personally use around 20.000~100.000 iterations. 
+I saw the statistical procedure goes up to 2.000.000 and probably more iterations, but the precision doesn't increase and RooT just stops working above 150.000 iterations.
 
 MAKEFILE
 
