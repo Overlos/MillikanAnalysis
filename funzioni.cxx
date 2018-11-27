@@ -25,7 +25,7 @@ ifstream in(filename);
 
 if(!in){
 
-	cout<< "Achtung! File not found, exiting" <<endl;
+	cerr << "Achtung! File not found, exiting" <<endl;
 	exit(3);
 
 }else{
