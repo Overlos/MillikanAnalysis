@@ -5,6 +5,8 @@ The local minimum in the neighbourhood of 1.6021e-19 is the best value for the d
 In this neighbourhood you will found a parabola like shape, the minimun refers to this section of the graph.
 The deviation in sigma is only in term of statistical error.
 
+This is the second update, I rewrote the code in form of classes to better manage the memory and to reduce the computing power required, making this version faster.
+
 *********************************************************************************************************************************
 
 REQUIREMENTS
@@ -13,7 +15,7 @@ RooT release 6.14/04
 
 *********************************************************************************************************************************
 
-In this repository you wìll find a makefile, two *.cxx* files, one *.h* file and one *.dat* test file.
+In this repository you wìll find a makefile, three *.cxx* files, two *.h* file and one *.dat* test file.
 
 The test file contains a series of fake charge values which return a parabola having a minimun in 1.60438e-19 at maximun precision.
 
@@ -37,7 +39,7 @@ In Linux and Linux-like terminals, you execute the program by typing
 
 In which:
 
-"name of file" is the name, with eventual extension, of the file in wich you have ONLY the values of the charges;
+"name of file" is the name, with eventual extension, of the file in which you have ONLY the values of the charges;
 
 "starting point" is the x point, so the starting test charge, from which the computer starts computing the values of S(q);
 
@@ -73,5 +75,7 @@ I assigned various exit commands, their return are:
 Thank you for your attention, I hope you will appreciate my work.
 
 Andrea Trezzi 
+
+Special thanks to TheElegantTurtle, who helped me in debugging :)
 
 Milan, 22nd November 2018
