@@ -17,10 +17,9 @@ Control(argc);
 TApplication app("app",0,0); //loop che mi permette di vedere i grafici
 
 string filename = argv[1];
-string filename2 = argv[2];
-double q_start = atof(argv[3]);
-double bin = atof(argv[4]);
-int nbin = atoi(argv[5]);
+double q_start = atof(argv[2]);
+double bin = atof(argv[3]);
+int nbin = atoi(argv[4]);
 
 vector<double> Qi;
 vector<Point*> Points;
@@ -41,26 +40,9 @@ LoadGraph(g,Points,nbin);
 SetGraph(g);
 
 double xmin, ymin;
-int n=0;
 
-n=GetMin(xmin, ymin, g);
-
-vector<double> SQi;
-double tmp=0;
-LoadData(filename2, SQi);
-
-EvalSigma(Points,Qi,SQi,tmp,n);
-
-
-/*
-for(int i=0; i<Qi.size()-1;i++){
-	tmp+=pow(SQi[i]/((Qi.size()-1)*Points[n]->GetK(i)),2);
-	}
-
-tmp=sqrt(tmp);
-*/
-
-PrintStat(xmin, ymin, Qi, tmp);
+GetMin(xmin, ymin, g);
+PrintStat(xmin, ymin, Qi);
 
 g->Draw("AC");
 app.Run();
